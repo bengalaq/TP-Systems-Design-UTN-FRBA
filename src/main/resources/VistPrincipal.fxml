@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="361.0" prefWidth="357.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="14.0" layoutY="83.0" prefHeight="220.0" prefWidth="303.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="39.0" AnchorPane.topAnchor="83.0">
+         <children>
+            <AnchorPane prefHeight="192.0" prefWidth="305.0">
+               <children>
+                  <VBox layoutX="47.0" layoutY="55.0" prefHeight="165.0" prefWidth="250.0">
+                     <children>
+                        <Button fx:id="eliminarButton" mnemonicParsing="false" onAction="#eliminarPOI" prefHeight="33.0" prefWidth="234.0" text="Eliminar POI" />
+                        <Button fx:id="consultarButton" mnemonicParsing="false" onAction="#consultarPOI" prefHeight="33.0" prefWidth="234.0" text="Consultar POI" />
+                        <Button fx:id="modificarButton" mnemonicParsing="false" onAction="#modificarPOI" prefHeight="33.0" prefWidth="234.0" text="Modificar POI" />
+                        <Button fx:id="asignaAccionesButton" mnemonicParsing="false" onAction="#asignarAcciones" prefHeight="33.0" prefWidth="234.0" text="Asignar acciones a usuarios" />
+                        <Button fx:id="historialButton" mnemonicParsing="false" onAction="#historialDeBusquedas" prefHeight="33.0" prefWidth="234.0" text="Historial de búsquedas" />
+                     </children>
+                  </VBox>
+                  <Button fx:id="crearButton" layoutX="47.0" layoutY="22.0" mnemonicParsing="false" onAction="#crearPOI" prefHeight="33.0" prefWidth="234.0" stylesheets="@DarkTheme.css" text="Crear POI" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <Label layoutX="14.0" layoutY="14.0" styleClass="label-header" text="¡Bienvenido!" />
+   </children>
+</AnchorPane>
